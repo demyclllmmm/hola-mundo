@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Holamundo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>Primer servlet</description>
+    <display-name>Saludo</display-name>
+    <servlet-name>Saludo</servlet-name>
+    <servlet-class>com.senati.web.Saludo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Saludo</servlet-name>
+    <url-pattern>/bienvenido</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Primerservlet</description>
+    <display-name>hola</display-name>
+    <servlet-name>hola</servlet-name>
+    <servlet-class>com.senati.holamundo.hola</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hola</servlet-name>
+    <url-pattern>/bienvenidos</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Primerservlet</description>
+    <display-name>saludo</display-name>
+    <servlet-name>saludo</servlet-name>
+    <servlet-class>com.senati.holamundo.saludo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>saludo</servlet-name>
+    <url-pattern>/bienvenidos</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Primerservlet</description>
+    <display-name>bienvenidos</display-name>
+    <servlet-name>bienvenidos</servlet-name>
+    <servlet-class>com.senati.saludo.Bienvenida</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bienvenidos</servlet-name>
+    <url-pattern>/bienvenidos</url-pattern>
+  </servlet-mapping>
+</web-app>
